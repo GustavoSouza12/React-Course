@@ -6,21 +6,23 @@ import ChildComponent from './ChildComponent'
     constructor(props) {
         super(props)
     
+  
         this.state = {
-             parentName: 'Parent'
+            text: ''
         }
 
-        this.methoD = this.method.bind(this)
+        this.changeText = this.changeText.bind(this)
+
     }
 
-    method(t1, t2){
-        alert(`man ${t2}, man ${t1}`)
+    changeText = (A) =>{
+        alert(`Alertando ${A}`)
     }
     
     render() {
         return (
             <div>
-                <ChildComponent method={this.methoD}/>
+                <ChildComponent method={this.changeText}/>
             </div>
         )
     }

@@ -1,30 +1,30 @@
 import React, { Component } from 'react'
 
-class EventBind extends Component {
-
-    constructor(props) {
+export class EventBind extends Component {
+    constructor(props){
         super(props)
-    
+
         this.state = {
-             message: 'Hello'
+            message: 'HELLO'
         }
 
-        this.clickHandler = this.clickHandler.bind(this)
+        this.changeText = this.changeText.bind(this)
     }
- 
-   clickHandler = () =>{
-       this.setState({
-           message: 'xD'
-       })
-   } 
+
+    changeText = () =>{
+        this.setState({
+            message: 'GOODBYE'
+        })
+    }
     render() {
         return (
             <div>
-                <div>{this.state.message}</div>
-                <button onClick={this.clickHandler}>EventBind</button>
+                <h1>{this.state.message}</h1>
+                <button onClick={this.changeText}>Binding Event</button>
             </div>
         )
     }
 }
 
 export default EventBind
+

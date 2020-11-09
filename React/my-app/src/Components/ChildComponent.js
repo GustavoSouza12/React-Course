@@ -3,7 +3,7 @@ import React from 'react'
 function ChildComponent({method}) {
     return (
         <div>
-           <button onClick={() => method('teste', 'TESTE2')}>TESTE</button> 
+           <button onClick={() => method('Gustavo')}>asda</button> 
         </div>
     )
 }

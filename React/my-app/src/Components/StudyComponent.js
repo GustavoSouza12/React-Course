@@ -12,7 +12,7 @@ export class StudyComponent extends Component {
     }
   
 
-    changeText(componentName, a , a2){
+    changeText(a2){
         alert(`Esse é o ${a2}`)
     }
     

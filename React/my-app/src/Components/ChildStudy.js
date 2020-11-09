@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ChildStudy = ({change}) => {
+const ChildStudy = ({method}) => {
     return (
         <div>
-            <button onClick={() => change()}>study</button>   
+            <button onClick={() => method('Gustavo')}>study</button>   
         </div>
     )
 }
