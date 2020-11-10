@@ -7,10 +7,12 @@ import ClassClick from './Components/ClassClick'
 import EventBind from './Components/EventBind'
 import ParentComponent from './Components/ParentComponent'
 import StudyComponent from './Components/StudyComponent'
+import UserGreeting from './Components/UserGreeting';
 
 function App() {
   return (
     <div className="App">
+      <UserGreeting/>
       <FunctionClick/>
       <ClassClick/>
       <EventBind></EventBind>
