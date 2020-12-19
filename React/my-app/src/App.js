@@ -7,12 +7,14 @@ import ClassClick from './Components/ClassClick'
 import EventBind from './Components/EventBind'
 import ParentComponent from './Components/ParentComponent'
 import StudyComponent from './Components/StudyComponent'
-import UserGreeting from './Components/UserGreeting';
+import CondtionalRendering from './Components/16_Conditional_Rendering';
+import NameList from './Components/17_NameList'
 
 function App() {
   return (
     <div className="App">
-      <UserGreeting/>
+      <NameList/>
+      <CondtionalRendering/>
       <FunctionClick/>
       <ClassClick/>
       <EventBind></EventBind>
