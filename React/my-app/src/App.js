@@ -13,11 +13,12 @@ import Stylesheet from './Components/20_Stylesheets'
 import Inline from './Components/20_inline'
 import './Styles/appStyles.css'
 import Styles from './Styles/appStyles.module.css'
-
+import Form from './Components/21_Form'
 
 function App() {
   return (
     <div className="App">
+      <Form/>
       <h1 className="error">Error</h1>
       <h1 className={Styles.sucess}>Sucess</h1>
       <Inline/>
