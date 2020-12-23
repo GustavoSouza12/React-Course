@@ -426,7 +426,10 @@ When an instance of a component is being created and inserted into the dom
 
 #### 1.1 Mounting methods (4 methods)
 
-Constructor, static getDerivedStateFromProps, render and componentDivMount
+A) Constructor
+B) Static getDerivedStateFromProps 
+C) Render 
+D) ComponentDivMount
 
 ### 2. Updating
 
@@ -451,3 +454,52 @@ When there is an error during rendering, in a lifecycle method, or in the constr
 #### 4.1 Error Handling methods (2 methods)
 
 static getDerivedStateFromError and componentDidCatch
+
+
+# 23 Component Mounting Lifecycle Methods
+
+### 1º method constructor(props)
+
+A special function that will get called whenever a new component is created and inserted in the DOM
+
+#### Used to:
+
+1. initializing state
+2. Biding the event handlers
+
+#### You shouldn't do:
+
+1. Do not cause side effects. Ex: HTTP requests
+
+#### Important points:
+
+1. We Have to call super(props), that is a basic class constructor
+
+### 2º method static getDerivedStateFromPros ( props, state)
+
+Is used when the state of the component depends on changes in props over time. 
+
+#### You shouldn't do:
+
+1. Do not cause side effects. Ex: HTTP requests
+
+
+### 3º method render()
+
+This is the only required method. Read props and state and return JSX
+
+#### You shouldn't do:
+
+1. Do not change state or interact with DOM
+
+
+### 4º Method componentDidMount()
+
+Invoked immediately after a component and all its children components have been rendered to the DOM
+
+### Ordem of execution
+
+1. Constructor
+2. getDerivedStateFromProps
+3. render
+4. componentDidMount
