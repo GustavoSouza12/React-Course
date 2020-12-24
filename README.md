@@ -503,3 +503,38 @@ Invoked immediately after a component and all its children components have been 
 2. getDerivedStateFromProps
 3. render
 4. componentDidMount
+
+
+# 24 Updating Lifecycle Methods
+
+## Methods (in ordem)
+
+### static getDerivedStateFromProps (props, state)
+
+Method is called every time a component is re-rendered
+Used when state depends of the props of the component
+
+### shouldComponentUpdated ( nextProps, nextState)
+
+Dictates if the component should re-render or not
+
+uset to performance optimization
+
+
+### render()
+
+Read props and state and return JSX
+
+
+### getSnapshotBeforeUpdate (prevProps, prevState)
+
+Called right before the changes from the virtual DOM are to be reflected in the DOM
+
+used to capture some information from the DOM
+
+### componentDidUpdate (prevProps, prevState, snapshot)
+
+Called after the render is finished in the re-render cycles
+
+Cause side effects
+
