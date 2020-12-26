@@ -565,14 +565,14 @@ When we create a JSX component we need to put all content (h1, p, span and other
 But there is another way to do it using the React.Fragment. 
 
 
-<img src="prints/25_Fragment"/>
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/25_Fragment.png"/>
 
 
 React.Fragment is usefull to put the correctly pieces of code in the correct place following the semantic HTML (like tr inside the tables)
 
-<img src="prints/25_FragmentTable"/>
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/25_FragmentTable.png"/>
 
-<img src="prints/25_FragmentColumn"/>
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/25_FragmentColumn.png"/>
 
 #### important point:
 
