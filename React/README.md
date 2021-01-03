@@ -578,3 +578,14 @@ React.Fragment is usefull to put the correctly pieces of code in the correct pla
 
 Is possible passing key as a parameter inside one React.Fragment
 
+# 26 Pure components
+
+pure components only re-renderer class components when have some difference in SC in props and state
+
+# 27 Memo
+
+Do the same thing that pure components do, but for functional components
+
+
+
+
