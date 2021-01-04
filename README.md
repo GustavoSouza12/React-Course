@@ -538,3 +538,70 @@ Called after the render is finished in the re-render cycles
 
 Cause side effects
 
+# 24.1 Unmounting Phase Method
+
+### componentWillUnmount()
+
+method is invoked immediately before a component is unmounted and destroyed
+
+#### used to:
+
+Cancelling any network requests, removing event handlers, cancelling any subscriptions and also invalidating timers
+
+<strong>OBS:</strong>Do not call the setState method
+
+# 24.2 Error Handling Phase Methods
+
+### static getDerivedStateFromError(error)
+
+### componentDidCatch(error, info)
+
+When there is an error either during rendering, in a lifecycle method, or in the constructor of any child component
+
+# 25 Fragments
+
+When we create a JSX component we need to put all content (h1, p, span and other tags) inside a div tag. 
+
+But there is another way to do it using the React.Fragment. 
+
+
+<img src="prints/25_Fragment"/>
+
+
+React.Fragment is usefull to put the correctly pieces of code in the correct place following the semantic HTML (like tr inside the tables)
+
+<img src="prints/25_FragmentTable"/>
+
+<img src="prints/25_FragmentColumn"/>
+
+#### important point:
+
+Is possible passing key as a parameter inside one React.Fragment
+
+# 26 Pure components
+
+pure components only re-renderer class components when have some difference in SC in props and state
+
+# 27 Memo
+
+Do the same thing that pure components do, but for functional components
+
+<img src="prints/27_MemoComp.png">
+
+# 28 Refs
+
+Refs make be possible acess the dom node. Is used a lot in focus some thing like an input in a form
+
+### 3 steps
+
+1) use react.createref method
+
+2) set the ref created in input element in the render mehtod
+
+3) call focus method
+
+<img src="prints/28_RefsDemo.jpg>
+
+# 29 Refs with class components
+
+Refs cannot be used with functional components, only class components
