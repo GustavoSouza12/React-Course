@@ -565,14 +565,14 @@ When we create a JSX component we need to put all content (h1, p, span and other
 But there is another way to do it using the React.Fragment. 
 
 
-<img src="prints/25_Fragment"/>
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/25_Fragment.png"/>
 
 
 React.Fragment is usefull to put the correctly pieces of code in the correct place following the semantic HTML (like tr inside the tables)
 
-<img src="prints/25_FragmentTable"/>
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/25_FragmentTable.png"/>
 
-<img src="prints/25_FragmentColumn"/>
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/25_FragmentColumn.png"/>
 
 #### important point:
 
@@ -586,7 +586,7 @@ pure components only re-renderer class components when have some difference in S
 
 Do the same thing that pure components do, but for functional components
 
-<img src="prints/27_MemoComp.png">
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/27_MemoComp.png">
 
 # 28 Refs
 
@@ -600,7 +600,7 @@ Refs make be possible acess the dom node. Is used a lot in focus some thing like
 
 3) call focus method
 
-<img src="prints/28_RefsDemo.jpg>
+<img src="https://github.com/GustavoSouza12/React-Course/blob/main/React/prints/28_RefsDemo.jpg">
 
 # 29 Refs with class components
 
