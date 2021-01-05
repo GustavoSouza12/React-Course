@@ -631,7 +631,7 @@ example:
 
 ### child element
 
-<img src="3-fowards 2>
+<img src="3-fowards 2">
 
 # 31 Portals
 
