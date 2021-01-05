@@ -605,3 +605,39 @@ Refs make be possible acess the dom node. Is used a lot in focus some thing like
 # 29 Refs with class components
 
 Refs cannot be used with functional components, only class components
+
+# 30 Fowarding Refs
+
+To acess some node DOM inside some child component using a parent we need to use React.forwardRef() approach 
+
+example:
+
+1. use react.createref method
+
+2. set the ref created in the component
+
+3. call focus method inside a function
+
+4. add the function inside a onClick even in a button
+
+5. Create a func component using React.forward(), passing ref as a parameter
+
+6. pass the ref to the input
+
+
+### parent element
+
+<img src="30forwards">
+
+### child element
+
+<img src="3-fowards 2>
+
+# 31 Portals
+
+React portals give us the ability to break the Dom tree and render
+component onto Dom node that is not unter the 'root' element 
+
+### Why do we need it
+
+is when we hate to deal with apparent components css when that child component is a modal, a pop-up or a tooltip
