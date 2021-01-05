@@ -6,17 +6,17 @@ export class RefsDemo extends Component {
 
         this.infoRef = React.createRef()
         
-        this.cbref = null
-        this.setCbRef = (element) => {
-            this.cbRef = element
-        }
+        // this.cbref = null
+        // this.setCbRef = (element) => {
+        //     this.cbRef = element
+        // }
     }
 
     componentDidMount(){
-        if (this.cbRef){
-            this.cbRef.focus()
-        }
-        // this.infoRef.current.focus()
+        // if (this.cbRef){
+        //     this.cbRef.focus()
+        // }
+        this.infoRef.current.focus()
     }
 
     clickHandler = () =>{
@@ -27,8 +27,8 @@ export class RefsDemo extends Component {
         return (
             <div>
                 <input type="text" ref={this.infoRef}/>
-                <input type="text" ref={this.setCbRef}/>
-                <button onClick={this.clickHandler}>Click</button>
+                {/* <input type="text" ref={this.setCbRef}/> */}
+                {/* <button onClick={this.clickHandler}>Click</button> */}
             </div>
         )
     }
