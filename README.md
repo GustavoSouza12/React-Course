@@ -641,3 +641,10 @@ component onto Dom node that is not unter the 'root' element
 ### Why do we need it
 
 is when we hate to deal with apparent components css when that child component is a modal, a pop-up or a tooltip
+
+
+# 33 High Order Components part 1
+
+A pattern where a function takes a component as an argument and returns a new component
+
+Is used to help us write less code and reuse code more easily without repeat a lot of code
