@@ -11,12 +11,13 @@ import FocusInput from './Components/29_FocusInput';
 import RFinput from './Components/30_FRparentInput'
 import PortalDemo from './Components/31_PortalDemo';
 import ClickCounter from './Components/33_ClickCounter';
-
+import HoverCounter from './Components/33_HoverCounter'
 function App() {
   return (
     <div className="App">
       
       <ClickCounter/>
+      <HoverCounter/>
       <PortalDemo/>
       {/* <RFinput/> */}
       {/* <FocusInput/> */}
